@@ -1,4 +1,4 @@
-package com.jocoos.flipflop.samgle
+package com.jocoos.flipflop.sample
 
 import org.junit.Test
 

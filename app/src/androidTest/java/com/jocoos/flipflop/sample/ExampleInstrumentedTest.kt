@@ -1,4 +1,4 @@
-package com.jocoos.flipflop.samgle
+package com.jocoos.flipflop.sample
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

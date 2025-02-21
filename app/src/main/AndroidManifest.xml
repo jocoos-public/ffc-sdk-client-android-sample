@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
+        android:name="com.jocoos.flipflop.sample.FlipFlopSampleApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -28,6 +29,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateAndJoinActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".VideoRoomListActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".VideoRoomActivity"
+            android:exported="true">
         </activity>
     </application>
 

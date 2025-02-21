@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.jocoos.flipflop.samgle"
-    compileSdk = 34
+    namespace = "com.jocoos.flipflop.sample"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.jocoos.flipflop.samgle"
+        applicationId = "com.jocoos.flipflop.sample"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

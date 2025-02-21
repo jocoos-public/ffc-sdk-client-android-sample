@@ -1,9 +1,25 @@
-# ffc-sdk-client-android
+# ffc-sdk-client-android-sample
+
+## How to test a sample app
+
+You need 'ffcUrl' and 'ffcAccessToken' to start a sample app(contact Jocoos to get the value).
+
+* ffcUrl: FlipFlop server address
+* ffcAccessToken: access token for FlipFlop server
+
+After that, change the value in FlipFlopSampleApp.kt after downloading source files to start a sample app.
+
+It has following functions.
+
+* creating a video and then join the video room
+* showing video room list and then join a video room selected
+
+## How to use ffc-sdk-client-android
 
 ### Installation
 ```
 dependencies {
-    implementation "com.jocoos.flipflop:ffc-sdk-client-android:1.0.1"
+    implementation "com.jocoos.flipflop:ffc-sdk-client-android:1.0.4"
 }
 ````
 
