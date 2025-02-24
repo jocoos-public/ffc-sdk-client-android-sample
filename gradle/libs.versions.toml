@@ -9,7 +9,7 @@ appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.10.0"
 constraintlayout = "2.2.0"
-ffcAndroidSdk = "1.0.5"
+ffcAndroidSdk = "1.0.6"
 
 [libraries]
 ffc-sdk-client-android = { group = "com.github.jocoos-public", name = "ffc-sdk-client-android", version.ref = "ffcAndroidSdk" }

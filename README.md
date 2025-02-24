@@ -14,6 +14,21 @@ It has following functions.
 * creating a video and then join the video room
 * showing video room list and then join a video room selected
 
+#### How to change video resolution
+
+You can set video options when creating video room.
+
+```
+videoRoom = FFCloudSDK.connectWebRtcVideoRoom(
+                applicationContext,
+                webRtcServerUrl,
+                webRtcToken,
+                // FFCVideoCaptureParameter's default
+                // width = 1280, height = 720, maxFps = 30
+                localVideoOptions = FFCLocalVideoOptions(captureParams = FFCVideoCaptureParameter(width = 1280, height = 720, maxFps = 30))
+            )
+```
+
 ## How to use ffc-sdk-client-android
 
 ### Installation

@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.jocoos.flipflop.FFCLocalVideoOptions
-import com.jocoos.flipflop.FFCVideoPreset
+import com.jocoos.flipflop.FFCVideoCaptureParameter
 import com.jocoos.flipflop.FFCVideoRoom
 import com.jocoos.flipflop.FFCVideoRoomEvent
 import com.jocoos.flipflop.FFCloudSDK
@@ -50,7 +50,9 @@ class VideoRoomActivity : AppCompatActivity() {
                 applicationContext,
                 webRtcServerUrl,
                 webRtcToken,
-                localVideoOptions = FFCLocalVideoOptions(captureParams = FFCVideoPreset.H720)
+                // FFCVideoCaptureParameter's default
+                // width = 1280, height = 720, maxFps = 30
+                localVideoOptions = FFCLocalVideoOptions(captureParams = FFCVideoCaptureParameter(width = 1280, height = 720, maxFps = 30))
             )
 
             videoRoom.initVideoRenderer(findViewById<FFCSurfaceViewRenderer>(R.id.renderer))
