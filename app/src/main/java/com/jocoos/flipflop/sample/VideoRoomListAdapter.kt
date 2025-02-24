@@ -41,6 +41,7 @@ class VideoRoomListAdapter : RecyclerView.Adapter<VideoRoomListAdapter.ViewHolde
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val idView = view.findViewById<TextView>(R.id.id)
+        private val roomTypeView = view.findViewById<TextView>(R.id.room_type)
         private val stateView = view.findViewById<TextView>(R.id.state)
         private val titleView = view.findViewById<TextView>(R.id.title)
         private val ownerView = view.findViewById<TextView>(R.id.owner)
@@ -48,6 +49,9 @@ class VideoRoomListAdapter : RecyclerView.Adapter<VideoRoomListAdapter.ViewHolde
 
         fun bind(videoRoomInfo: VideoRoomInfo) {
             idView.text = videoRoomInfo.id.toString()
+            videoRoomInfo.type?.let {
+                roomTypeView.text = it.toString()
+            }
             videoRoomInfo.videoRoomState?.let {
                 stateView.text = it.toString()
             }
