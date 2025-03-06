@@ -23,9 +23,14 @@ videoRoom = FFCloudSDK.connectWebRtcVideoRoom(
                 applicationContext,
                 webRtcServerUrl,
                 webRtcToken,
-                // FFCVideoCaptureParameter's default
-                // width = 1280, height = 720, maxFps = 30
-                localVideoOptions = FFCLocalVideoOptions(captureParams = FFCVideoCaptureParameter(width = 1280, height = 720, maxFps = 30))
+                // FFCVideoCaptureParameter's default: width = 1280, height = 720, maxFps = 30
+                localVideoOptions = FFCLocalVideoOptions(
+                    captureParams = FFCVideoCaptureParameter(width = 1280, height = 720, maxFps = 30)
+                ),
+                // FFCVideoEncoding's default: maxBitrate = 1_700_000, maxFps = 30
+                videoPublishOptions = FFCVideoPublishOptions(
+                    videoEncoding = FFCVideoEncoding(maxBitrate = 1_700_000, maxFps = 30)
+                ),
             )
 ```
 
@@ -99,7 +104,7 @@ val api = FFCloudSDK.api(serverUrl, accessToken)
 2. Joining in a video room
   * 1. Creating video room instance
   ```
-  // webRtcServerUrl, webRtcToken: issueWebRtcVideoRoomToken에서 얻어온 값
+  // webRtcServerUrl, webRtcToken: values from issueWebRtcVideoRoomToken
   val videoRoom = FFCloudSDK.connectWebRtcVideoRoom(applicationContext, webRtcServerUrl, webRtcToken)
   // R.id.renderer: a view for participant's screen
   // R.id.local_camera: a view for my camera screen
