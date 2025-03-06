@@ -39,7 +39,7 @@ videoRoom = FFCloudSDK.connectWebRtcVideoRoom(
 ### Installation
 ```
 dependencies {
-    implementation "com.jocoos.flipflop:ffc-sdk-client-android:1.0.4"
+    implementation "com.jocoos.flipflop:ffc-sdk-client-android:1.1.2"
 }
 ````
 
