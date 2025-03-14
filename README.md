@@ -4,15 +4,13 @@
 
 You need 'ffcUrl' and 'ffcAccessToken' to start a sample app(contact Jocoos to get the value).
 
-* ffcUrl: FlipFlop server address
-* ffcAccessToken: access token for FlipFlop server
+At first, You need to update 'ffcUrl' and 'ffcAccessToken in **FlipFlopSampleApp.kt**. You can get it from FlipFlop Cloud server SDK(refer to server SDK documentation).
+* url: FlipFlop Cloud Server Address
+* accessToken: access token for accessing FlipFlop Cloud
 
-After that, change the value in FlipFlopSampleApp.kt after downloading source files to start a sample app.
-
-It has following functions.
-
-* creating a video and then join the video room
-* showing video room list and then join a video room selected
+A sample app has following functions.
+* creating a video rom and then join it
+* showing video room list and join a video room which you selected
 
 #### How to change video resolution
 
